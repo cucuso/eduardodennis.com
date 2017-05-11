@@ -3,6 +3,7 @@
 var Terminal = (function () {
 	// PROMPT_TYPE
 	var PROMPT_INPUT = 1, PROMPT_PASSWORD = 2, PROMPT_CONFIRM = 3
+	var bashPrompt = "root@eduardodennis.com:~# "
 
 	var fireCursorInterval = function (inputField, terminalObj) {
 		var cursor = terminalObj._cursor
@@ -28,6 +29,7 @@ var Terminal = (function () {
 		inputField.style.opacity = '0'
 		inputField.style.fontSize = '0.2em'
 
+		terminalObj._ps1.textContent = bashPrompt;
 		terminalObj._inputLine.textContent = ''
 		terminalObj._input.style.display = 'block'
 		terminalObj.html.appendChild(inputField)
@@ -61,7 +63,7 @@ var Terminal = (function () {
 			if (PROMPT_TYPE === PROMPT_CONFIRM || e.which === 13) {
 				terminalObj._input.style.display = 'none'
 				var inputValue = inputField.value
-				if (shouldDisplayInput) terminalObj.print(inputValue)
+				if (shouldDisplayInput) terminalObj.print(bashPrompt+inputValue)
 				terminalObj.html.removeChild(inputField)
 				if (typeof(callback) === 'function') {
 					if (PROMPT_TYPE === PROMPT_CONFIRM) {
@@ -94,6 +96,7 @@ var Terminal = (function () {
 
 		this._innerWindow = document.createElement('div')
 		this._output = document.createElement('p')
+		this._ps1 = document.createElement('span') //ps1
 		this._inputLine = document.createElement('span') //the span element where the users input is put
 		this._cursor = document.createElement('span')
 		this._input = document.createElement('p') //the full element administering the user input, including cursor
@@ -162,6 +165,7 @@ var Terminal = (function () {
 			this._shouldBlinkCursor = (bool === 'TRUE' || bool === '1' || bool === 'YES')
 		}
 
+		this._input.appendChild(this._ps1)
 		this._input.appendChild(this._inputLine)
 		this._input.appendChild(this._cursor)
 		this._innerWindow.appendChild(this._output)
@@ -171,10 +175,8 @@ var Terminal = (function () {
 		this.setBackgroundColor('white')
 		this.setTextColor('black')
 		this.setTextSize('1em')
-		this.setWidth('50%')
-		this.setHeight('50%')
 
-		this.html.style.fontFamily = 'Monaco, Courier'
+		this.html.style.fontFamily = 'Menlo, Helvetica Monospaced'
 		this.html.style.margin = '0'
 		this._innerWindow.style.padding = '10px'
 		this._input.style.margin = '0'

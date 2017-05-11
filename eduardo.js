@@ -1,8 +1,6 @@
 			var inputTerminal = new Terminal('input')
 			document.body.appendChild(inputTerminal.html)
 		
-			var displayTerminal = new Terminal()
-			document.body.appendChild(displayTerminal.html)
 
 			var showQuestion = false;
 		
@@ -27,7 +25,7 @@
 				inputTerminal.clear();
 				this.main();
 			}else{
-			displayTerminal.print(JSON.stringify(response.msg));
+			inputTerminal.print(response.msg);
 				this.main();
 			}
 			});}
@@ -47,7 +45,11 @@
 				break;
 		    case 'help':
 				response = {isClear: false, msg: '\'Clear\' - clear terminal screen, \'Help\' display helpful information about builtin commands, \'Menu\' display available actions. This is all I have for now.'}
+				break;
+			default : 
+				response = {isClear: false, msg :'-bash: '+ input +': command not found'}
 			}
+
 			
 			return response;
 		}
