@@ -3,11 +3,47 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Eduardo Dennis Resume</title>
-		<script src="terminal.js"></script>
 		
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+		<link rel="stylesheet" href="css/main.css">	
 	</head>
+	
 	<body bgcolor="#ffffff" style="display: flex;">
+		
+	    <!--Call your modal-->
+	       <a id="demo01" href="#animatedModal" style="visibility: hidden;"></a>
+
+	       <!--DEMO01-->
+<div id="animatedModal">
+            <div id="closebt-container" class="close-animatedModal">
+                <img class="closebt" src="img/closebt.svg">
+            </div>
+
+            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+
+      		  	Teste
+           </div>
+        </div>
+		   
+	   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	   	<script src="js/animatedModal.min.js"></script>
 	</body>
 
-	<script src="eduardo.js"></script>
+	
+	<script>
+//demo 01
+           $("#demo01").animatedModal({
+ 			  	modalTarget:'animatedModal',
+                animatedIn:'zoomIn',
+                animatedOut:'bounceOut',
+                color:'#3498db',
+           });
+	</script>
+	
+	<script src="js/terminal.js"></script>
+	<script src="js/main.js"></script>
+
+
+	
+
 </html>
