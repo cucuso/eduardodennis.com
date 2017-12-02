@@ -114,6 +114,12 @@ var Terminal = (function () {
 			this._output.appendChild(newLine)
 		}
 		
+		this.printHtml = function (message) {
+			var newLine = document.createElement('div')
+			newLine.innerHTML = message
+			this._output.appendChild(newLine)
+		}
+		
 		this.clear = function() {
 			element.remove(this.html.id);
 		}
