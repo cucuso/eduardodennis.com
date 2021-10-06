@@ -28,3 +28,10 @@ myFluid.mapBehaviors({
     transparent: true
 });
 myFluid.activate();
+
+var event = new MouseEvent('dblclick', {
+    'view': window,
+    'bubbles': true,
+    'cancelable': true
+  });
+document.getElementById('renderSurface').dispatchEvent(event);
