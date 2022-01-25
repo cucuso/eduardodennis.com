@@ -72,12 +72,12 @@ var Terminal = (function () {
 				}
 			}
 		}
-		if (firstPrompt) {
-			firstPrompt = false
-			setTimeout(function () { inputField.focus()	}, 50)
-		} else {
-			inputField.focus()
-		}
+		// if (firstPrompt) {
+		// 	firstPrompt = false
+		// 	setTimeout(function () { inputField.focus()	}, 50)
+		// } else {
+		// 	inputField.focus()
+		// }
 	}
 
 	var terminalBeep

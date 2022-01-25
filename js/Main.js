@@ -29,9 +29,6 @@ myFluid.mapBehaviors({
 });
 myFluid.activate();
 
-var event = new MouseEvent('dblclick', {
-    'view': window,
-    'bubbles': true,
-    'cancelable': true
-  });
-document.getElementById('renderSurface').dispatchEvent(event);
+$(document).click(function() {
+    $('.quote').hide(); 
+});
