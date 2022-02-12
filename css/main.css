@@ -1,18 +1,18 @@
 body {
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   color: fff;
   margin: 0px;
 }
 
 .main-image {
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   -moz-user-select: none;
--webkit-user-select: none;
-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 canvas {
@@ -20,8 +20,7 @@ canvas {
   height: 100vh;
 }
 
-
-.section { 
+.section {
   position: relative;
   height: 100vh;
   display: flex;
@@ -31,9 +30,22 @@ canvas {
   margin: 0px;
 }
 
-.section-term { 
+.section-term {
   height: 100vh;
-  background-color: #2B3D50;
+  background-color: #2b3d50;
+}
+
+.glitch-item {
+  color: #2b3d50;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .bg2 {
@@ -50,9 +62,10 @@ canvas {
   font-size: 10px;
 }
 
-.navbar, a {
+.navbar,
+a {
   color: rgb(105, 102, 102);
-  text-decoration:none;
+  text-decoration: none;
 }
 
 #head {
@@ -67,7 +80,7 @@ canvas {
   text-align: center;
   width: 750px;
   height: 25px;
-  background-color: #DAD9D9;
+  background-color: #dad9d9;
   margin: 0 auto;
   font-family: monospace;
   padding: auto;
@@ -75,14 +88,14 @@ canvas {
   border-radius: 5px;
 }
 #red {
-  background-color: #E94B35;
+  background-color: #e94b35;
   border-radius: 100%;
   width: 15px;
   height: 15px;
   margin: 0 auto;
   left: -47%;
   bottom: -20%;
-  position:relative;
+  position: relative;
 }
 #yellow {
   background-color: #f0f000;
@@ -92,22 +105,22 @@ canvas {
   margin: 0 auto;
   left: -44%;
   bottom: 40%;
-  position:relative;
+  position: relative;
   display: block;
 }
 #green {
-  background-color: #1AAF5C;
+  background-color: #1aaf5c;
   border-radius: 100%;
   width: 15px;
   height: 15px;
   margin: 0 auto;
   left: -41%;
   bottom: 99%;
-  position:relative;
+  position: relative;
   display: block;
 }
 #screen {
-  background-color: #33485E;
+  background-color: #33485e;
   width: 750px;
   height: 450px;
   border-radius: 2%;
@@ -136,24 +149,21 @@ canvas {
   border: 0px;
 }
 
- .quote{
+.quote {
   position: absolute;
   right: 200;
   top: 95;
-  width:240px;
+  width: 240px;
   font-size: 30px;
-   font-family: 'Teko';
-color: #2B3D50;
--moz-user-select: none;
--webkit-user-select: none;
-user-select: none;
-opacity: 0.4;
+  font-family: "Teko";
+  color: #2b3d50;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0.15;
+}
 
- }
-
- 
-
-.floating { 
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -163,7 +173,13 @@ opacity: 0.4;
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
