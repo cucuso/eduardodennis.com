@@ -1,18 +1,17 @@
 body {
   font-family: "Raleway", serif;
-  color: fff;
+  color: #000;
   margin: 0px;
 }
 
 .main-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  right:0;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  overflow:hidden;
+  height: 100%;
 }
 
 canvas {
@@ -26,13 +25,18 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   margin: 0px;
+  background-color: #071119;
 }
 
-.section-term {
-  height: 100vh;
-  background-color: #2b3d50;
+.showcase {
+  background-color: rgb(22, 30, 40);
+  color: #5f7892;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .glitch-item {
@@ -136,10 +140,6 @@ a {
   position: static;
 }
 
-.terminal-bg {
-  padding: 200px;
-}
-
 .term-iframe {
   position: absolute;
   left: 0;
@@ -151,12 +151,12 @@ a {
 
 .quote {
   position: absolute;
-  right: 200;
-  top: 95;
+  right: 1000px;
+  top: 280px;
   width: 240px;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Teko";
-  color: #2b3d50;
+  color: #e1e5e9;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;

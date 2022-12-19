@@ -24,7 +24,7 @@ myFluid.mapBehaviors({
     threshold: 0.6,
     soft_knee: 0.7,
  
-    background_color: { r: 255, g: 255, b: 255 },
+    background_color: {r:0,g:0,b:0},
     transparent: true
 });
 myFluid.activate();

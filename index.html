@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/fluid-canvas@latest"></script>
     <script
@@ -15,32 +17,45 @@
       href="https://fonts.googleapis.com/css?family=Raleway|Teko"
     />
     <!-- fav icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="img/favicon_io/site.webmanifest" />
   </head>
   <body>
-    <section class="section">
+    <section class="section main-img">
       <canvas id="renderSurface"></canvas>
       <div class="quote floating">
         While holding the left mouse button, move to see something cool.
       </div>
       <div class="main-image">
-        <img src="img/face.png" style="height: 600px" />
+        <img
+          src="img/ai7.png"
+          class="main-img"
+          title="Image generated using A.I."
+        />
       </div>
     </section>
 
-    <section id="home" class="section-term">
-      <div class="terminal-bg">
-        <div id="bar">
-          <div id="red"></div>
-          <div id="yellow"></div>
-          <div id="green"></div>
-        </div>
-        <div id="screen">
-          <iframe src="terminal.html" class="term-iframe"></iframe>
-        </div>
+    <section class="section showcase">
+      <div title="base64 encoded">
+        <p>
+          U29mdHdhcmUgZGV2ZWxvcGVyIHdvcmtpbmcgb24gZGlmZmVyZW50IEEuSS4gcHJvamVjdHMgYXMgd2VsbCBhcyBjcnlwdG8uIFN0aWxsIGhhdmUgdG8gYWRkIGJsb2csIGFuZCBwb3N0IGFib3V0IHVzaW5nIE1pZEpvdXJuZXkgdG8gZ2VuZXJhdGUgQS5JLiBpbWFnZXMu
+        </p>
       </div>
     </section>
 
