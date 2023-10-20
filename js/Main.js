@@ -73,3 +73,19 @@ $('.glitch-item').hover(function() {
     $('a', this).text(glitchTexts[$(this).index() - 1]);
   }
 });
+
+
+// random programming quote
+var quotes = ["Coding like poetry should be short and concise. ― Santosh Kalwar", 
+"First, solve the problem. Then, write the code. – John Johnson",
+"Programming is the art of algorithm design and the craft of debugging errant code. – Ellen Ullman",
+"Confusion is part of programming. ― Felienne Hermans",
+"Experience is the name everyone gives to their mistakes. – Oscar Wilde",
+"Any fool can write code that a computer can understand. Good programmers write code that humans can understand. ― Martin Fowler"]
+
+window.onload = function()
+{
+  var i = Math.floor(Math.random() * quotes.length);
+  $('.quote').html(quotes[i]);
+ console.log('wow');
+}

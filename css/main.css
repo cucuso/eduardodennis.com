@@ -40,7 +40,7 @@ canvas {
 }
 
 .glitch-item {
-  color: #2b3d50;
+  color: #5f7892;
   margin-top: 10px;
   text-align: center;
   font-weight: bold;
@@ -56,82 +56,14 @@ ul {
   background-color: darkgrey;
 }
 
-.navbar {
-  justify-content: center;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 10px;
-}
+
 
 .navbar,
 a {
-  color: rgb(105, 102, 102);
+  color: #5f7892;
   text-decoration: none;
 }
 
-#head {
-  font-family: monospace;
-  color: #fff;
-  margin: auto;
-  padding: 35px;
-  font-size: 40px;
-  text-align: center;
-}
-#bar {
-  text-align: center;
-  width: 750px;
-  height: 25px;
-  background-color: #dad9d9;
-  margin: 0 auto;
-  font-family: monospace;
-  padding: auto;
-  float: none;
-  border-radius: 5px;
-}
-#red {
-  background-color: #e94b35;
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  left: -47%;
-  bottom: -20%;
-  position: relative;
-}
-#yellow {
-  background-color: #f0f000;
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  left: -44%;
-  bottom: 40%;
-  position: relative;
-  display: block;
-}
-#green {
-  background-color: #1aaf5c;
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  left: -41%;
-  bottom: 99%;
-  position: relative;
-  display: block;
-}
-#screen {
-  background-color: #33485e;
-  width: 750px;
-  height: 450px;
-  border-radius: 2%;
-  margin: 0 auto;
-  padding: 1px;
-  position: relative;
-}
 .font {
   color: #fff;
   font-family: monospace;
@@ -140,18 +72,9 @@ a {
   position: static;
 }
 
-.term-iframe {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 740px;
-  height: 440px;
-  border: 0px;
-}
-
 .quote {
   position: absolute;
-  right: 1000px;
+  right: 1200px;
   top: 280px;
   width: 240px;
   font-size: 40px;
